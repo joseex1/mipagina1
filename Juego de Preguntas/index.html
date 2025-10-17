@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game Kon-Tiki</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Quiz Game</h1>
+        <p>Preguntas Kon-Tiki</p>
+    </header>
+
+    <div class="container">
+        <section id="p0">
+            <h3>1- ¿En que año fue la expedicion?</h3>
+            <label>
+                <input type="radio" value="1" name="p0" onclick="respuesta(0,this)">1937
+            </label>
+            <label>
+                <input type="radio" value="2" name="p0" onclick="respuesta(0,this)">1920
+            </label>
+            <label>
+                <input type="radio" value="3" name="p0" onclick="respuesta(0,this)">1947
+            </label>
+        </section>
+
+        <section id="p1">
+            <h3>2- ¿Como se escribe el Apellido de Thor.....?</h3>
+            <label>
+                <input type="radio" value="1" name="p1" onclick="respuesta(1,this)">Heyerdahl
+            </label>
+            <label>
+                <input type="radio" value="2" name="p1" onclick="respuesta(1,this)" >Heyardal
+            </label>
+            <label>
+                <input type="radio" value="3" name="p1" onclick="respuesta(1,this)">Hayardala
+            </label>
+        </section>
+
+        <section id="p2">
+            <h3>3- ¿Desde que costa partio la expedicion?</h3>
+            <label>
+                <input type="radio" value="1" name="p2" onclick="respuesta(2,this)">Chile
+            </label>
+            <label>
+                <input type="radio" value="2" name="p2" onclick="respuesta(2,this)">Peru
+            </label>
+            <label>
+                <input type="radio" value="3" name="p2" onclick="respuesta(2,this)">Argentina
+            </label>
+        </section>
+
+        <section id="p3">
+            <h3>4- ¿Con cuantas personas hizo la expedicion?</h3>
+            <label>
+                <input type="radio" value="1" name="p3" onclick="respuesta(3,this)">5
+            </label>
+            <label>
+                <input type="radio" value="2" name="p3" onclick="respuesta(3,this)">8
+            </label>
+            <label>
+                <input type="radio" value="3" name="p3" onclick="respuesta(3,this)">4
+            </label>
+        </section>
+
+        <section id="p4">
+            <h3>5- ¿Que Oceano cruzaron?</h3>
+            <label>
+                <input type="radio" value="1" name="p4" onclick="respuesta(4,this)">Atlantico
+            </label>
+            <label>
+                <input type="radio" value="2" name="p4" onclick="respuesta(4,this)">Indico
+            </label>
+            <label>
+                <input type="radio" value="3" name="p4" onclick="respuesta(4,this)">Pacifico
+            </label>
+        </section>
+
+        <button onclick="corregir()">CORREGIR</button>
+        <h2>Cantidad acertadas: <span id="resultado"></span></h2>
+
+    </div>
+
+    <script src="./js/script.js"></script>
+
+
+</body>
+</html>
